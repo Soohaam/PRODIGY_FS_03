@@ -1,0 +1,99 @@
+/* src/pages/RegisterPage.css */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif; /* Default font for the page */
+    background: #f2f2f2; /* Light background color */
+  }
+  
+  .register-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .register-box {
+    background: linear-gradient(135deg, #ff8a00, #e52e71); /* Bright gradient background */
+    border-radius: 15px;
+    padding: 30px;
+    width: 100%;
+    max-width: 400px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    position: relative;
+  }
+  
+  .register-title {
+    font-family: 'Poppins', sans-serif; /* Stylish font */
+    font-size: 2.5rem;
+    color: #fff;
+    margin-bottom: 20px;
+    animation: glow 1.5s infinite alternate; /* Glowing effect */
+  }
+  
+  .error-message {
+    color: #f8d7da;
+    background: #f5c6cb;
+    border: 1px solid #f5c6cb;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+  }
+  
+  .input-group {
+    position: relative;
+    margin-bottom: 15px;
+  }
+  
+  .input-icon {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #ff8a00;
+  }
+  
+  .register-input {
+    width: 80%;
+    padding: 12px 40px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-family: 'Poppins', sans-serif;
+    transition: border-color 0.3s, box-shadow 0.3s;
+  }
+  
+  .register-input:focus {
+    border-color: #ff8a00;
+    box-shadow: 0 0 8px rgba(255, 138, 0, 0.5);
+    outline: none;
+  }
+  
+  .register-button {
+    background: #ff8a00;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 12px 20px;
+    font-size: 1.1rem;
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+  }
+  
+  .register-button:hover {
+    background-color: #e52e71;
+    transform: scale(1.05);
+  }
+  
+  @keyframes glow {
+    from {
+      text-shadow: 0 0 10px #ff8a00, 0 0 20px #ff8a00, 0 0 30px #ff8a00, 0 0 40px #ff8a00;
+    }
+    to {
+      text-shadow: 0 0 20px #e52e71, 0 0 30px #e52e71, 0 0 40px #e52e71, 0 0 50px #e52e71;
+    }
+  }
+  

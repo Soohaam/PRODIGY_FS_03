@@ -1,0 +1,261 @@
+/* src/components/HomePage.css */
+
+.homepage {
+    font-family: 'Arial', sans-serif; /* Font for the entire page */
+    color: #333;
+    background: linear-gradient(135deg, #f5f7fa, #c3cfe2); /* Bright, soft background */
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden; /* Hide horizontal overflow */
+  }
+  
+  /* Header Styles */
+  .header {
+    background: linear-gradient(135deg, #ff7e5f, #feb47b); /* Gradient background */
+    padding: 30px; /* Slightly smaller padding */
+    text-align: center;
+    color: #fff;
+    position: relative;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-bottom: 30px;
+  }
+  
+  .header-title {
+    font-size: 2.5rem; /* Slightly smaller font size */
+    font-family: 'Lobster', cursive; /* Stylish font */
+    animation: glow 1.5s infinite alternate;
+  }
+  
+  .header-subtitle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-style: italic;
+    font-variant-ligatures: historical-ligatures;
+    margin: 20px auto;
+    font-size: 1.5rem;
+    font-family: 'Open Sans', sans-serif;
+    animation: glow 1.5s infinite alternate;
+  }
+  
+  /* Intro Section */
+  .intro {
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.8)), url('your-pattern.png') no-repeat center center fixed; /* Patterned background */
+    background-size: cover;
+    padding: 40px 20px;
+    text-align: center;
+    border-radius: 15px;
+    margin: 20px auto;
+    max-width: 80%;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  .intro h2 {
+    font-size: 2rem;
+    color: #ff7e5f; /* Coral color */
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .intro h2 svg {
+    margin-right: 10px;
+    color: #feb47b;
+  }
+  
+  .intro p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #333;
+  }
+  
+  /* Featured Articles Section */
+  .featured-articles {
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.8)), url('your-pattern.png') no-repeat center center fixed;
+    background-size: cover;
+    padding: 40px 20px;
+    text-align: center;
+    border-radius: 15px;
+    margin: 20px auto;
+    max-width: 80%;
+  }
+  
+  .featured-articles h2 {
+    font-size: 2rem;
+    color: #ff7e5f; /* Coral color */
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .featured-articles h2 svg {
+    margin-right: 10px;
+    color: #feb47b;
+  }
+  
+  .articles-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .article-box {
+    background: linear-gradient(135deg, #fff, #f9f9f9);
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .article-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  .read-more-link {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background: #ff7e5f;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s, box-shadow 0.3s;
+  }
+  
+  .read-more-link:hover {
+    background-color: #feb47b;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Store Highlights Section */
+  .store-highlights {
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.8)), url('your-pattern.png') no-repeat center center fixed;
+    background-size: cover;
+    padding: 40px 20px;
+    text-align: center;
+    border-radius: 15px;
+    margin: 20px auto;
+    max-width: 80%;
+  }
+  
+  .store-highlights h2 {
+    font-size: 2rem;
+    color: #ff7e5f; /* Coral color */
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .store-highlights h2 svg {
+    margin-right: 10px;
+    color: #feb47b;
+  }
+  
+  .highlight-boxes {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .highlight {
+    background: linear-gradient(135deg, #fff, #f9f9f9);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 300px;
+    text-align: center;
+    transition: background 0.3s, transform 0.3s;
+  }
+  
+  .highlight:hover {
+    background: #ffcc00;
+    transform: scale(1.05);
+  }
+  
+  /* Customer Reviews Section */
+  .customer-reviews {
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.8)), url('your-pattern.png') no-repeat center center fixed;
+    background-size: cover;
+    padding: 40px 20px;
+    text-align: center;
+    border-radius: 15px;
+    margin: 20px auto;
+    max-width: 80%;
+  }
+  
+  .customer-reviews h2 {
+    font-size: 2rem;
+    color: #ff7e5f; /* Coral color */
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .customer-reviews h2 svg {
+    margin-right: 10px;
+    color: #feb47b;
+  }
+  
+  .review {
+    background: rgba(255, 255, 255, 0.8);
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .review h3 {
+    font-family: 'Lobster', cursive;
+    font-size: 1.5rem;
+    color: #ff7e5f;
+    margin-bottom: 10px;
+  }
+  
+  .rating svg {
+    margin-right: 3px;
+  }
+  
+  /* Footer Styles */
+  .footer {
+    background: linear-gradient(135deg, #ff7e5f, #feb47b); /* Gradient background */
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    font-family: 'Open Sans', sans-serif;
+    position: relative;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2);
+    margin-top: 30px;
+  }
+  
+  .footer p {
+    margin: 0;
+  }
+  
+  /* Keyframes for Glowing Text */
+  @keyframes glow {
+    from {
+      text-shadow: 0 0 10px #ff7e5f, 0 0 20px #ff7e5f, 0 0 30px #ff7e5f, 0 0 40px #ff7e5f;
+    }
+    to {
+      text-shadow: 0 0 20px #feb47b, 0 0 30px #feb47b, 0 0 40px #feb47b, 0 0 50px #feb47b;
+    }
+  }
+  
+  /* Media Queries */
+  @media (min-width: 768px) {
+    .homepage {
+      background: url('../assets/homepage.jpg') no-repeat center center fixed; /* Background image */
+      background-size: cover;
+    }
+  }
+  

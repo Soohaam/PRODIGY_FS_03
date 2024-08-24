@@ -1,0 +1,117 @@
+/* src/pages/OrderDetailsPage.css */
+
+#order-details-container {
+    font-family: 'Open Sans', sans-serif;
+    padding: 20px;
+    max-width: 900px;
+    margin: 0 auto;
+    background: #f7f7f7;
+    border-radius: 10px;
+  }
+  
+  #order-details-title {
+    font-size: 2.5rem;
+    color: #4caf50;
+    text-align: center;
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  #order-summary {
+    background: #ffffff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+  }
+  
+  .order-id, .order-status, .order-price, .order-shipping {
+    font-size: 1.2rem;
+    margin: 10px 0;
+    color: #555;
+  }
+  
+  .order-id {
+    color: #1e88e5;
+    font-weight: bold;
+  }
+  
+  .order-status span {
+    color: #ff9800;
+    font-weight: bold;
+  }
+  
+  .order-price span {
+    color: #d32f2f;
+    font-weight: bold;
+  }
+  
+  .order-shipping span {
+    color: #8e24aa;
+    font-weight: bold;
+  }
+  
+  #items-title {
+    font-size: 2rem;
+    color: #ff7e5f;
+    margin-bottom: 15px;
+    text-align: center;
+  }
+  
+  #items-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .item {
+    display: flex;
+    align-items: center;
+    background: #ffffff;
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    transition: transform 0.3s;
+  }
+  
+  .item:hover {
+    transform: scale(1.02);
+  }
+  
+  .item-image {
+    width: 100px;
+    border-radius: 8px;
+    margin-right: 15px;
+  }
+  
+  .item-details {
+    flex: 1;
+  }
+  
+  .item-name, .item-quantity, .item-price {
+    font-size: 1rem;
+    color: #333;
+    margin: 5px 0;
+  }
+  
+  .item-name span {
+    color: #1e88e5;
+    font-weight: bold;
+  }
+  
+  .item-quantity span {
+    color: #ff9800;
+    font-weight: bold;
+  }
+  
+  .item-price span {
+    color: #d32f2f;
+    font-weight: bold;
+  }
+  
+  .loading-text, .error-text {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #ff7e5f;
+  }
+  

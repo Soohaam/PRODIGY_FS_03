@@ -1,0 +1,133 @@
+/* src/pages/ProductListPage.css */
+
+.product-list-container {
+  font-family: 'Open Sans', sans-serif;
+  margin-left: 10px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: left; /* Center align items horizontally */
+}
+
+.product-card {
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+  width: 120%;
+  max-width: 270px; /* Ensure uniform width for all cards */
+  height: 100%; /* Set a fixed height for all cards */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.product-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.product-card {
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+}
+
+.product-card:hover {
+  transform: scale(1.05);
+}
+
+
+h1 {
+  font-size: 2.5rem;
+  color: #ff9100;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px;
+  width: 100%;
+  max-width: 1200px; /* Optional: restrict max width to prevent it from stretching too much */
+  margin-left: 10px; /* Add space from left edge */
+}
+
+.filters input,
+.filters select {
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  outline: none;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.filters input:focus,
+.filters select:focus {
+  border-color: #ff7e5f;
+  box-shadow: 0 0 8px rgba(255, 126, 95, 0.5);
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+  width: 100%;
+  max-width: 1200px; /* Optional: restrict max width */
+}
+
+.product-card {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.product-card img {
+  width: 100%;
+  height: auto; /* Fixed height for images */
+  object-fit: cover; /* Ensures images cover the area without distortion */
+}
+
+.product-card h2 {
+  font-size: 1.5rem;
+  color: #000000; /* Darker color for better readability */
+  margin: 10px 0;
+}
+
+.product-card p {
+  font-size: 1.5rem;
+  color: #ff7e5f; /* Vibrant color for price */
+  border-color: darkkhaki;
+  text-shadow: 0px 0px 2px gold;
+  margin: 10px 0;
+}
+
+.product-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.product-actions button {
+  background: #ff7e5f;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.product-actions button:hover {
+  background-color: #feb47b; /* Lighter color on hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}

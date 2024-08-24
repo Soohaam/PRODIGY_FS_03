@@ -1,0 +1,138 @@
+/* Header.css */
+
+.header {
+    background: linear-gradient(135deg, #ff6f61, #ffcc00); /* Gradient background */
+    padding: 20px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3); /* Deep shadow for depth */
+    border-bottom: 4px solid #ffcc00; /* Bright border for separation */
+    position: relative; /* Position relative for the star overlay */
+    overflow: hidden; /* Ensure stars don’t overflow */
+  }
+  
+  /* Star background overlay */
+  .header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.1) 20%, transparent 20%),
+                radial-gradient(circle, rgba(255, 255, 255, 0.1) 20%, transparent 20%),
+                radial-gradient(circle, rgba(255, 255, 255, 0.1) 20%, transparent 20%);
+    background-size: 10px 10px, 20px 20px, 30px 30px;
+    background-position: 0 0, 50px 50px, 100px 100px;
+    animation: moveStars 20s linear infinite; /* Animation for star movement */
+    z-index: 0; /* Position the stars behind the content */
+    opacity: 0.5; /* Slight opacity to not overpower the text */
+  }
+  
+  /* Keyframes for star background animation */
+  @keyframes moveStars {
+    0% { background-position: 0 0, 50px 50px, 100px 100px; }
+    100% { background-position: 100px 100px, 150px 150px, 200px 200px; }
+  }
+  
+  /* Ensure content is above the star background */
+  .header > * {
+    position: relative;
+    z-index: 1;
+  }
+  
+  .logo a {
+    color: #fff; /* White text for the logo */
+    font-size: 2.5rem; /* Larger font size */
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s, transform 0.3s;
+  }
+  
+  .logo a:hover {
+    color: #ffcc00; /* Yellow color on hover */
+    transform: scale(1.1); /* Slightly enlarges the logo on hover */
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    position: relative;
+  }
+  
+  .nav-links li {
+    position: relative;
+  }
+  
+  .nav-links a,
+  .nav-links button {
+    color: #fff; /* White text for nav links */
+    text-decoration: none;
+    font-size: 1.2rem; /* Larger font size */
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 25px;
+    border-radius: 30px; /* Rounded buttons */
+    background-color: #ff6f61; /* Bright coral color */
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .nav-links a:hover,
+  .nav-links button:hover {
+    background-color: #ffcc00; /* Yellow color on hover */
+    transform: translateY(-5px) rotate(3deg); /* Lift and slight rotation on hover */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); /* Enhanced shadow on hover */
+  }
+  
+  .nav-links button {
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .nav-links button:focus {
+    outline: none;
+  }
+  
+  .nav-links a:active,
+  .nav-links button:active {
+    background-color: #ff6f61; /* Coral color on click */
+    transform: translateY(0) rotate(0); /* No rotation on click */
+    box-shadow: none; /* Remove shadow on click */
+  }
+  
+  @media (max-width: 768px) {
+    .header {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .logo {
+      margin-bottom: 20px;
+    }
+  
+    .nav-links {
+      flex-direction: column;
+      width: 100%;
+    }
+  
+    .nav-links li {
+      width: 100%;
+      text-align: center;
+      margin-bottom: 15px;
+    }
+  
+    .nav-links a,
+    .nav-links button {
+      width: 100%;
+      justify-content: center;
+      font-size: 1.1rem;
+      padding: 15px;
+      border-radius: 25px; /* Adjust radius for mobile */
+    }
+  }
+  

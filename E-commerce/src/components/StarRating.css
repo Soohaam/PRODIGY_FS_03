@@ -1,0 +1,56 @@
+/* src/components/StarRating.css */
+
+.star-rating {
+  display: flex;
+}
+
+.star-icon {
+  font-size: 2rem;
+  color: #FFD700; /* Gold color */
+  transition: color 0.3s, transform 0.3s;
+  position: relative;
+}
+
+.star-icon.filled {
+  color: #FFD700; /* Filled stars */
+}
+
+.star-icon.half-filled {
+  color: #FFD700; /* Half-filled stars */
+}
+
+.star-icon:hover,
+.star-icon.filled:hover,
+.star-icon.half-filled:hover {
+  color: #ffdb58; /* Slightly brighter gold on hover */
+  transform: scale(1.1);
+}
+
+/* Adding a shiny, metallic look */
+.star-icon::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0.1) 50%, rgba(255, 255, 255, 0) 75%);
+  transform: translate(-50%, -50%) rotate(0deg);
+  border-radius: 50%;
+  opacity: 0.7;
+  pointer-events: none;
+  animation: shine 1.5s infinite linear;
+}
+
+@keyframes shine {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+
+.star-icon.half-filled::before {
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.5) 50%, rgba(255, 255, 255, 0) 50%);
+}

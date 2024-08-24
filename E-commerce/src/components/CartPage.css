@@ -1,0 +1,182 @@
+/* src/pages/CheckoutPage.css */
+
+.checkout-container {
+    font-family: 'Open Sans', sans-serif;
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+    color: #ff9100;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  h3 {
+    font-size: 2.5rem;
+    color: #ff9100;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .order-summary,
+  .payment-info {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(142, 127, 106, 0.489);
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .order-summary h2,
+  .payment-info h2 {
+    font-size: 1.8rem;
+    color: #ff7e5f;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .order-summary h2 svg,
+  .payment-info h2 svg {
+    margin-right: 10px;
+  }
+  
+  .order-summary ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .order-summary li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .order-summary img {
+    width: 100px;
+    height: auto;
+    margin-right: 15px;
+  }
+  
+  .order-summary div {
+    flex: 1;
+  }
+  
+  .order-summary p {
+    margin: 5px 0;
+  }
+  
+  .order-summary button {
+    background: #ff7e5f;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .order-summary button:hover {
+    background-color: #feb47b;
+  }
+  
+  .payment-info {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .payment-info h2 {
+    font-size: 1.8rem;
+    color: #ff7e5f;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .payment-info h2 svg {
+    margin-right: 10px;
+  }
+  
+  .payment-info form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .payment-info label {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+    font-size: 1rem;
+    color: #333;
+  }
+  
+  .payment-info label svg {
+    margin-right: 10px;
+  }
+  
+  .payment-info input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    margin-top: 5px;
+    box-sizing: border-box;
+    min-height: 40px; /* Ensures minimum height for uniformity */
+  }
+  
+  .payment-info input:focus {
+    border-color: #ff7e5f;
+    box-shadow: 0 0 8px rgba(255, 126, 95, 0.5);
+  }
+  
+  .payment-info button {
+    background: #ff7e5f;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .payment-info button:hover {
+    background-color: #feb47b;
+  }
+  
+  .error-message,
+  .success-message {
+    margin-top: 15px;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .error-message {
+    background: #f8d7da;
+    color: #721c24;
+  }
+  
+  .error-message svg {
+    margin-right: 10px;
+  }
+  
+  .success-message {
+    background: #d4edda;
+    color: #155724;
+  }
+  
+  .success-message svg {
+    margin-right: 10px;
+  }
+  

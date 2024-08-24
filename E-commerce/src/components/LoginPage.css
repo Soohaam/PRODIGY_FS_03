@@ -1,0 +1,102 @@
+/* src/pages/LoginPage.css */
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f5f5f5; /* Neutral background color */
+    display: flex;
+    flex-direction: column; /* Stack header, content, and footer */
+    min-height: 100vh;
+  }
+  
+  .header, .footer {
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+    background: #ff7e5f; /* Matching orange theme color */
+    color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1; /* Take available space */
+    padding: 20px;
+  }
+  
+  .login-box {
+    background: #ffffff; /* White background for the login box */
+    border-radius: 10px;
+    padding: 30px;
+    width: 100%;
+    max-width: 400px; /* Limit the width of the box */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    position: relative; /* For positioning the icons */
+    margin: 20px;
+  }
+  
+  .login-title {
+    font-size: 2rem;
+    color: #ff7e5f; /* Matching orange theme color */
+    text-align: center;
+    font-family: 'Lobster', cursive;
+    margin-bottom: 20px;
+  }
+  
+  .error-message {
+    color: #ff4d4d; /* Error color */
+    text-align: center;
+    margin-bottom: 15px;
+  }
+  
+  .input-group {
+    position: relative;
+    margin-bottom: 20px;
+  }
+  
+  .input-icon {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    color: #ff7e5f; /* Matching orange theme color */
+    font-size: 1.2rem;
+  }
+  
+  .login-input {
+    width: 100%;
+    padding: 10px 40px; /* Extra padding for icon */
+    border: 2px solid #ff7e5f; /* Border color matching theme */
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    box-sizing: border-box; /* Ensure padding is included in width */
+  }
+  
+  .login-input:focus {
+    border-color: #feb47b; /* Lighter orange for focus */
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .login-button {
+    width: 100%;
+    padding: 10px;
+    background: #ff7e5f; /* Orange background */
+    color: #ffffff; /* White text */
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .login-button:hover {
+    background: #feb47b; /* Lighter orange on hover */
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  

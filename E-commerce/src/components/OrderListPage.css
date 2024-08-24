@@ -1,0 +1,123 @@
+/* src/pages/OrderListPage.css */
+
+#order-list-container {
+    font-family: 'Open Sans', sans-serif;
+    padding: 20px;
+    max-width: 900px;
+    margin: 0 auto;
+    background: #f7f7f7;
+    border-radius: 10px;
+  }
+  
+  #order-list-title {
+    font-size: 2.5rem;
+    color: #ff9100;
+    text-align: center;
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  #order-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .order-item {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    padding: 20px;
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    transition: transform 0.3s;
+  }
+  
+  .order-item:hover {
+    transform: scale(1.02);
+  }
+  
+  .order-icon {
+    color: #ff7e5f;
+  }
+  
+  .order-details {
+    flex: 1;
+  }
+  
+  .order-details p {
+    font-size: 1rem;
+    color: #555;
+    margin: 5px 0;
+  }
+  
+  .order-id, .order-status, .order-price, .order-address {
+    color: #333;
+    font-weight: bold;
+    font-size: 1.1rem;
+  }
+  
+  .order-id {
+    color: #1e88e5;
+  }
+  
+  .order-status {
+    color: #43a047;
+  }
+  
+  .order-price {
+    color: #e53935;
+  }
+  
+  .order-address {
+    color: #8e24aa;
+  }
+  
+  .view-details-link {
+    color: #ff7e5f;
+    text-decoration: none;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    transition: color 0.3s;
+  }
+  
+  .view-details-link:hover {
+    color: #ff9100;
+  }
+  
+  .no-orders {
+    text-align: center;
+    font-size: 1.5rem;
+    color: #ff7e5f;
+  }
+  
+  .no-orders p {
+    margin-top: 10px;
+  }
+  
+  .no-orders-icon {
+    color: #ff7e5f;
+    margin-bottom: 10px;
+  }
+  
+  .browse-link {
+    color: #1e88e5;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+  }
+  
+  .browse-link:hover {
+    color: #1565c0;
+  }
+  
+  .loading-text, .error-text {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #ff7e5f;
+  }
+  

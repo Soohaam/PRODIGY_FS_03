@@ -1,0 +1,97 @@
+/* src/components/AddReviewForm.css */
+
+.add-review-form {
+    background: #fff;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 0 auto;
+    font-family: 'Open Sans', sans-serif;
+  }
+  
+  .add-review-form h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 15px;
+    text-align: center;
+    font-weight: 600;
+  }
+  
+  .add-review-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .add-review-form label {
+    font-size: 1.2rem;
+    color: #555;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .add-review-form select {
+    padding: 10px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    outline: none;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: border-color 0.3s, box-shadow 0.3s;
+  }
+  
+  .add-review-form select:focus {
+    border-color: #ff6f61;
+    box-shadow: 0 0 8px rgba(255, 111, 97, 0.5);
+  }
+  
+  .add-review-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    outline: none;
+    min-height: 100px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: border-color 0.3s, box-shadow 0.3s;
+  }
+  
+  .add-review-form textarea:focus {
+    border-color: #ff6f61;
+    box-shadow: 0 0 8px rgba(255, 111, 97, 0.5);
+  }
+  
+  .add-review-form button {
+    background: #ff6f61;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+    align-self: center;
+  }
+  
+  .add-review-form button:hover {
+    background-color: #ff8a76;
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  .add-review-form p {
+    text-align: center;
+    font-size: 1.1rem;
+    margin: 10px 0;
+  }
+  
+  .add-review-form .success {
+    color: #4caf50; /* Green for success */
+  }
+  
+  .add-review-form .error {
+    color: #f44336; /* Red for errors */
+  }
+  
